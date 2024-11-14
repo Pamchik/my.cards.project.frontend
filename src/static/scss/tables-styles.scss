@@ -1,0 +1,22 @@
+.center-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skeleton-table-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: 100%;
+    border: 1px solid #bebebe;
+    border-radius: 10px;
+    background: #c4c4c43a
+}
+
+.ag-theme-quartz, .ag-theme-quartz-dark, .ag-theme-quartz-auto-dark {
+    --ag-active-color: #16ac20;
+    --ag-input-focus-border-color: 2px solid #10a21a;
+    --ag-input-focus-box-shadow: 0 0 6px 2px #0f13943f;
+}

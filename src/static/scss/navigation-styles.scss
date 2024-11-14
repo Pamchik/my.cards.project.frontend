@@ -1,0 +1,169 @@
+.sidenav {
+    display: flex;
+    flex: 1 0 auto;
+    min-width: 160px;
+    max-width: 12%;
+    min-height: 100%;
+    flex-direction: column;
+    cursor: pointer;
+    background: #eeeeee;
+
+    .sidenav__logo {
+        display: block;
+        background-color: #c4c4c469;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        height: 44px;
+
+        .sidenav__title {
+            display: inline;
+            color: #565656;   
+            font-size: 16px;
+            font-weight: 800;  
+            line-height: 24px;
+            letter-spacing: 1px;                                           
+        }
+        
+        &:hover .sidenav__title {
+            color: #5656569f;
+        }
+
+    }    
+
+    .sidenav__version {
+        display: flex;
+        height: 100%;
+        text-align: start;
+        align-items: flex-end;
+
+        .sidenav__title {
+            display: inline;
+            color: #565656;   
+            font-size: 12px;
+            font-weight: 400;  
+            letter-spacing: 1px;   
+            margin: 10px;                                        
+        }
+    }
+
+    .sidenav__link {
+        padding: 5px 0 0 0;
+
+        .sidenav__item {
+            background-color: #c4c4c43a;
+            border-radius: 10px;  
+            .first-level {
+                padding: 10px 15px;
+                margin: 5px 0;
+                .first-level__text {
+                    margin: 0px 30px 0 0;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 1px; 
+                    color: #565656;   
+                    font-weight: 600;                     
+                }
+                &.first-level_arrow {
+                    position: relative;
+                    padding: 10px 35px 10px 15px;
+                    &::after,
+                    &::before {
+                        content: ''; 
+                        width: 11px;
+                        height: 1px;
+                        background-color: #565656;
+                        position: absolute;
+                        top: 50%;  
+                        transition: all 0.3s ease 0s;        
+                    }
+                    &::before {
+                        transform: rotate(40deg);
+                        right: 18px;
+                    }
+
+                    &::after {
+                        transform: rotate(-40deg);
+                        right: 10px;
+                    }   
+
+                    &.active::after {
+                        transform: rotate(40deg);
+                    }
+
+                    &.active::before {
+                        transform: rotate(-40deg);
+                    }
+                }
+            } 
+            &:hover {
+                background-color: #c4c4c484;
+                border-radius: 10px;                          
+            }
+
+            &.active{
+                background-color: #c4c4c484;
+                border-radius: 10px;   
+            } 
+
+            .second-level {
+                display: none;
+                &__block {
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 10px;  
+
+                    a {
+                        padding: 5px 10px 5px 15px;
+                    
+                        &:hover {
+                            background-color: #c4c4c4;
+                            border-radius: 10px;
+                        }                        
+                        &.active{
+                            border-radius: 10px;
+                            background-color: #c4c4c4;
+                        } 
+                        
+                    }
+                    .second-level__text {
+                        display: inline;
+                        font-size: 13px;
+                        line-height: 20px;
+                        letter-spacing: 1px; 
+                        color: #565656;   
+                        font-weight: 500;               
+                        &:hover {       
+                            background-color: transparent;                  
+                        }                        
+                    }
+                }
+            }            
+        }  
+    }
+}
+
+.navbar {
+    background-color: #eeeeee;
+    width: 100%;
+    flex: 0 0 auto;
+    &__row { 
+        height: 44px;
+        background-color: #c4c4c469;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    &__block-btn {
+
+    }
+
+    &__user {
+        margin: auto 10px; 
+    }
+}

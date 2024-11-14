@@ -1,0 +1,172 @@
+// Модальное окно с формой для добавления файлов
+.upload-modal-form {
+
+   &__upload-block {
+      display: block;
+      flex: 1 1 auto;
+      width: 100%;
+      height: 250px;
+   }
+
+   &__block-text {
+      display: flex;
+      flex: 1 1 auto;
+      justify-content: center;
+   }
+
+   &__from-to {
+      margin-left: 70px;
+      margin-right: 40px;
+   }
+
+   &__date {
+   }
+
+
+
+}
+
+// Форма для добавления файла
+.file-upload-animation-part {
+   width: 90%;
+   height: 90%;
+   display: block;
+   margin: 2% auto;
+   position: relative;
+
+   &__input {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      color: transparent;
+      z-index: 10;
+      cursor: pointer;
+      opacity: 0;
+
+      &::-webkit-file-upload-button {
+         visibility: hidden;
+       }
+   }
+
+   &__content {
+      position: relative;
+      display: block;
+      height: calc(100% - 4px);
+      border: 2px dashed #49505799;
+      border-radius: 20px;
+      transition: 0.2s;
+   }
+
+   &__infos {
+      position: absolute;
+      display: flex;
+      width: 70%;
+      height: 70%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: 10px auto auto auto ;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   &__icon {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      color: #49505799;
+      background-color: #f1f1f1;
+      border-radius: 20px;
+      padding: 5px;
+      box-shadow: inset 0px 0px 6px 0px #ccc;
+      transition: 0.2s;
+      text-align: center;
+
+      svg {
+         margin-bottom: 20px;
+         background-image: url("./../icons/Download-file_light-gray.svg");
+         width: 70px;
+         height: 70px;
+         background-repeat: no-repeat
+      }
+   }
+
+   &__input--active + &__content, &__input:hover + &__content {
+      background: #e3e5e8;
+
+      .file-upload-animation-part__icon-shadow {
+         animation-name: shrink;
+         animation-duration: 0.6s;
+         animation-iteration-count: infinite;
+      }
+
+      .file-upload-animation-part__icon {
+      
+         svg {
+            animation-name: bounce;
+            animation-duration: 0.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+         }
+      }   
+   }
+
+   &__icon-shadow {
+      position: relative;
+      display: block;
+      width: 95px;
+      height: 7px;
+      border-radius: 100%;
+      background-color: #e3e5e8;
+      top: -17px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   &__text {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 9pt;
+   }
+         
+   &__name {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 5px;
+      right: 0;
+      font-weight: bold;
+      margin: auto;
+      text-align: center;
+   }
+   
+   @keyframes bounce {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }
+    @keyframes shrink {
+      0% {
+        width: 95px;
+      }
+      50% {
+        width: 75px;
+      }
+      100% {
+        width: 95px;
+      }
+    }
+}

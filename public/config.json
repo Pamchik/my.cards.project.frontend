@@ -1,0 +1,6 @@
+{
+  "WEB_Url": "http://localhost:3000",
+  "API_Url": "http://127.0.0.1:8000",
+  "emailDomain": "@test.kz",
+  "Media_ROOT": "/media/"
+}

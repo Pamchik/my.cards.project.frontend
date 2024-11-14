@@ -1,0 +1,477 @@
+.checkbox {
+    margin-top: 15px;
+    display: flex;
+    position: relative;
+
+    &__label {
+        padding-left: 25px;
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+    }
+
+    &__input[type="checkbox"] {  
+        position: absolute;
+        opacity: 0;
+    
+        &:hover ~ .checkbox__element {
+        box-shadow: 0 0 6px 2px #0f13943f;
+        background: #12c31e47 url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxMiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTIgOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPHBhdGggZD0iTTQuNTc1IDguOTc3cy0uNDA0LS4wMDctLjUzNi0uMTY1TC4wNTcgNS42NGwuODI5LTEuMjI3TDQuNDcgNy4yNjggMTAuOTIxLjA4NmwuOTIzIDEuMTAzLTYuODYzIDcuNjRjLS4xMzQtLjAwMy0uNDA2LjE0OC0uNDA2LjE0OHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+) 50% 40% no-repeat;
+        }  
+
+        &:focus ~ .checkbox__element {
+        box-shadow: 0 0 6px 2px #0f13943f;
+        }
+
+        &:focus:checked ~ .checkbox__element {
+        box-shadow: 0 0 6px 2px #0f13943f;
+        }
+    
+        &:checked ~ .checkbox__element {
+        color: white;
+        background: #12c31e url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxMiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTIgOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPHBhdGggZD0iTTQuNTc1IDguOTc3cy0uNDA0LS4wMDctLjUzNi0uMTY1TC4wNTcgNS42NGwuODI5LTEuMjI3TDQuNDcgNy4yNjggMTAuOTIxLjA4NmwuOTIzIDEuMTAzLTYuODYzIDcuNjRjLS4xMzQtLjAwMy0uNDA2LjE0OC0uNDA2LjE0OHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+) 50% 40% no-repeat;
+        border: 1px solid #10a21a;
+        }
+    }
+
+    &__element {
+        border-radius: 3px;
+        position: absolute;
+        left: 0;
+        top: -2px;
+        width:  15px; 
+        height: 15px;
+        border: 1px solid #a3a3a3;
+        pointer-events: none;
+        -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+    }  
+}
+
+.radio {
+    margin-top: 15px;
+
+    &__label {
+        padding-left: 25px;
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+    }
+
+    &__input[type="radio"] {  
+        position: absolute;
+        opacity: 0;
+    
+        &:hover ~ .radio__element {
+        box-shadow: 0 0 6px 2px #0f13943f;
+        background: #12c31e47 url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxMiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTIgOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPHBhdGggZD0iTTQuNTc1IDguOTc3cy0uNDA0LS4wMDctLjUzNi0uMTY1TC4wNTcgNS42NGwuODI5LTEuMjI3TDQuNDcgNy4yNjggMTAuOTIxLjA4NmwuOTIzIDEuMTAzLTYuODYzIDcuNjRjLS4xMzQtLjAwMy0uNDA2LjE0OC0uNDA2LjE0OHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+) 50% 40% no-repeat;
+        }  
+
+        &:focus ~ .radio__element {
+        box-shadow: 0 0 6px 2px #0f13943f;
+        }
+
+        &:focus:checked ~ .radio__element {
+        box-shadow: 0 0 6px 2px #0f13943f;
+        }
+    
+        &:checked ~ .radio__element {
+        color: white;
+        background: #12c31e url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxMiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTIgOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPHBhdGggZD0iTTQuNTc1IDguOTc3cy0uNDA0LS4wMDctLjUzNi0uMTY1TC4wNTcgNS42NGwuODI5LTEuMjI3TDQuNDcgNy4yNjggMTAuOTIxLjA4NmwuOTIzIDEuMTAzLTYuODYzIDcuNjRjLS4xMzQtLjAwMy0uNDA2LjE0OC0uNDA2LjE0OHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+) 50% 40% no-repeat;
+        border: 1px solid #10a21a;
+        background-size: 10px 10px;
+        }
+    }
+
+    &__element {
+        border-radius: 7px;
+        position: absolute;
+        left: 0;
+        top: -2px;
+        width:  15px; 
+        height: 15px;
+        border: 1px solid #a3a3a3;
+        pointer-events: none;
+        -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+    }  
+}
+
+.text-field {
+    min-height: 25px;
+    max-height: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    position: relative;
+
+    &__label {
+        display: inline-block;
+        width: 100%;
+        font-size: 12px;
+        margin: 0 0 0 5px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__block {
+        position: relative; 
+        display: grid;
+        align-items: center;
+    }
+
+    .text-field__input {
+        display: inline-block;
+        width: 100%;
+        min-height: 25px;
+        padding: 0 5px;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #212529;
+        background-color: #fff;
+        border: 1px solid #bdbdbd;
+        border-radius: 7px;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        position: relative;
+        overflow: hidden;
+
+        &::placeholder {
+            color: #212529;
+            opacity: 0.4;
+        }
+
+        &:focus {
+            color: #212529;
+            background-color: #fff;
+            border-color: #bdbdbd;
+            outline: 0;
+            box-shadow: 0 0 6px 2px #0f13943f;
+        }
+
+        &:disabled, &[readonly] {
+            background-color: rgba(255, 255, 255, 0.3);
+            opacity: 1;
+            &:focus {
+                box-shadow: 0 0 6px 2px #ee13133f;
+            }
+        }
+
+        &_updated {
+            position: relative;
+            border-right: 4px solid green;
+        }
+
+        &_password-block {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            right: 5px;
+            width: 20px;
+            height: 100%;
+        }    
+
+        &_password {
+             
+            background: transparent;
+            border: none;
+            width: 20px;
+            height: 20px;
+
+            &_show {
+                svg {
+                    background-image: url("./../icons/Eye-visible_gray.svg");
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    cursor: pointer;
+                }
+            }
+            &_hide {
+                svg {
+                    background-image: url("./../icons/Eye-hidden_gray.svg");
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    cursor: pointer;
+                }
+            }                
+        }
+
+        &_error-block {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            right: 5px;
+            width: 20px;
+            height: 100%;
+        }
+
+        &_error {
+            background: transparent;
+            border: none;
+            width: 20px;
+            height: 20px;
+                
+            svg {
+                background-image: url("./../icons/Important_circle_red.svg");
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                cursor: auto;
+            }
+        }
+    }
+
+    .text-field__textarea {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #212529;
+        background-color: #fff;
+        border: 1px solid #bdbdbd;
+        border-radius: 7px;
+        padding: 5px 5px;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        position: relative;
+        overflow: hidden;
+
+        &::placeholder {
+            color: #212529;
+            opacity: 0.4;
+        }
+
+        &:focus {
+            color: #212529;
+            background-color: #fff;
+            border-color: #bdbdbd;
+            outline: 0;
+            box-shadow: 0 0 6px 2px #0f13943f;
+        }
+        &:disabled, &[readonly] {
+            background-color: rgba(255, 255, 255, 0.3);
+            opacity: 1;
+            &:focus {
+                box-shadow: 0 0 6px 2px #ee13133f;
+            }
+        }
+
+        &_updated {
+            position: relative;
+            border-right: 4px solid green;
+        }
+
+        &_resize-not {
+            max-width: 100%;
+            min-width: 100%;
+            resize: none;   
+        }
+
+        &_error-block {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            right: 5px;
+            width: 20px;
+            height: 100%;
+        }
+
+        &_error {
+            background: transparent;
+            border: none;
+            width: 20px;
+            height: 20px;
+                
+            svg {
+                background-image: url("./../icons/Important_circle_red.svg");
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                cursor: auto;
+            }
+        }
+    }
+
+    .text-field__select {
+        display: inline-block;
+        width: 100%;
+        min-height: 25px;
+        padding: 0 5px;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #212529;
+        background-color: #fff;
+        border: 1px solid #bdbdbd;
+        border-radius: 7px;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        position: relative;
+        overflow: hidden;
+        
+        &::placeholder {
+            color: #212529;
+            opacity: 0.4;
+        }
+        
+        &:focus {
+            color: #212529;
+            background-color: #fff;
+            border-color: #bdbdbd;
+            outline: 0;
+            box-shadow: 0 0 6px 2px #0f13943f;
+        }
+
+        &:disabled, &[readonly] {
+            background-color: rgba(255, 255, 255, 0.3);
+            opacity: 1;
+            &:focus {
+                box-shadow: 0 0 6px 2px #ee13133f;
+            }
+        }
+
+        &_updated {
+            position: relative;
+            border-right: 4px solid green;
+        }
+
+        &_error-block {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            right: 5px;
+            width: 20px;
+            height: 100%;
+        }
+
+        &_error {
+            background: transparent;
+            border: none;
+            width: 20px;
+            height: 20px;
+                
+            svg {
+                background-image: url("./../icons/Important_circle_red.svg");
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                cursor: auto;
+            }
+        }
+    }
+
+    .text-field__block-listbox {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 0 5px;
+        background-color: #ffffff;
+        border: 1px solid #bdbdbd;
+        border-radius: 7px;
+        overflow-y: auto;
+        position: relative;
+
+        &.readonly {
+            background-color: rgba(255, 255, 255, 0.3);
+            opacity: 1;
+            &:focus {
+                box-shadow: 0 0 6px 2px #ee13133f;
+            }            
+        }
+
+        &_updated {
+            position: relative;
+            border-right: 4px solid green;
+        }
+
+        &_error-block {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            right: 5px;
+            width: 20px;
+            height: 100%;
+        }
+
+        &_error {
+            background: transparent;
+            border: none;
+            width: 20px;
+            height: 20px;
+                
+            svg {
+                background-image: url("./../icons/Important_circle_red.svg");
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                cursor: auto;
+            }
+        }
+
+    }
+
+}
+
+.skeleton-loading {
+    pointer-events: none;
+    position: relative;
+    border: 1px solid #bdbdbd;
+    border-radius: 7px;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(to right, transparent 0%, #ffffffb5 50%, transparent 100%);
+        animation: loading 1.5s infinite;
+        pointer-events: none;
+    }
+}
+
+@keyframes loading {
+    0% {
+        left: -100%; // Начальное положение анимации (за пределами поля ввода)
+    }
+    100% {
+        left: 100%; // Конечное положение анимации (за пределами поля ввода)
+    }
+}
